@@ -1,4 +1,10 @@
-def sumar(num:int) -> int:
-    return num + 1
+def factorial(num: int) -> int:
+    if num == 1:
+        return num
+    else:
+        fact = factorial(num - 1)
+        fact *= num
+        return fact
 
-print(sumar(5))
+
+print(factorial(6))
